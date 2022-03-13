@@ -1,25 +1,25 @@
-13130706738847
+18077067003794
 Board
-ADXL345_Breakout
+ESP32-WROOM-32
+Single 2.4 GHz Wi-Fi and Bluetooth combo chip https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
+Single 2.4 GHz Wi-Fi and Bluetooth combo  chip
+0
+39
+39
+Board
+GCT_USB4151-GF-C_REVA
+
+
+0
+29
+29
+Board
+MPU6050_Breakout
 Through hole straight socket strip, 1x08, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
 Through hole socket strip THT 1x08 2.54mm single row
 0
 8
 8
-Board
-Buzzer-SMD-5020
-SMD 8540, http://www.puiaudio.com/product-detail.aspx?partnumber=SMT-0825-S-4-R
-SMD 8540
-0
-4
-4
-Board
-PQFN80P300X500X100-14N
-
-
-0
-14
-14
 Board
 SOP65P640X120-8N
 
@@ -48,6 +48,27 @@ Through hole socket strip THT 1x02 2.00mm single row
 0
 2
 2
+Board
+SolderWire_1x03_P2.00mm
+Through hole straight socket strip, 1x03, 2.00mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x03 2.00mm single row
+0
+3
+3
+Board
+SolderWire_1x04_P2.00mm
+Through hole straight socket strip, 1x04, 2.00mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x04 2.00mm single row
+0
+4
+4
+Board
+SolderWire_1x05_P2.00mm
+Through hole straight socket strip, 1x05, 2.00mm pitch, single row (from Kicad 4.0.7), script generated
+Through hole socket strip THT 1x05 2.00mm single row
+0
+5
+5
 Board
 SolderWire_1x06_P2.54mm
 Through hole straight socket strip, 1x06, 2.54mm pitch, single row (from Kicad 4.0.7), script generated

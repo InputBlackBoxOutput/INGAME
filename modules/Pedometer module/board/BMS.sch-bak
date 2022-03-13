@@ -174,7 +174,7 @@ Wire Wire Line
 	6550 4150 6900 4150
 Text Label 6900 4150 2    50   ~ 0
 BATT+
-Text Label 7675 4175 0    50   ~ 0
+Text Label 8075 2150 0    50   ~ 0
 BATT+
 Wire Wire Line
 	6975 2100 6975 2200
@@ -328,7 +328,7 @@ Wire Wire Line
 Connection ~ 6775 2100
 Wire Wire Line
 	6775 2100 6975 2100
-Text Label 7675 4600 0    50   ~ 0
+Text Label 8075 2575 0    50   ~ 0
 BATT-
 Text Label 7125 3150 2    50   ~ 0
 BATT-
@@ -405,100 +405,6 @@ Wire Wire Line
 	5025 3150 6675 3150
 Connection ~ 6675 3150
 $Comp
-L power:+5V #PWR040
-U 1 1 61B31398
-P 7725 2450
-F 0 "#PWR040" H 7725 2300 50  0001 C CNN
-F 1 "+5V" H 7740 2623 50  0000 C CNN
-F 2 "" H 7725 2450 50  0001 C CNN
-F 3 "" H 7725 2450 50  0001 C CNN
-	1    7725 2450
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR041
-U 1 1 61B2C876
-P 7925 2950
-F 0 "#PWR041" H 7925 2700 50  0001 C CNN
-F 1 "GND" H 7930 2777 50  0000 C CNN
-F 2 "" H 7925 2950 50  0001 C CNN
-F 3 "" H 7925 2950 50  0001 C CNN
-	1    7925 2950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7925 2850 7925 2950
-Wire Wire Line
-	7725 2600 7725 2450
-Wire Wire Line
-	7925 2600 7725 2600
-Wire Wire Line
-	7925 2500 7925 2600
-Wire Wire Line
-	8425 3000 9125 3000
-Wire Wire Line
-	8425 3000 8425 2850
-Wire Wire Line
-	8425 2550 9125 2550
-Wire Wire Line
-	8425 2500 8425 2550
-Text Label 9125 2550 2    50   ~ 0
-BATT-
-Text Label 9125 3000 2    50   ~ 0
-BATT+
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61B19E50
-P 8425 2850
-AR Path="/61B19E50" Ref="TP?"  Part="1" 
-AR Path="/619940CA/61B19E50" Ref="TP4"  Part="1" 
-F 0 "TP4" H 8483 2968 50  0000 L CNN
-F 1 "TestPoint" H 8483 2877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8625 2850 50  0001 C CNN
-F 3 "~" H 8625 2850 50  0001 C CNN
-	1    8425 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61B19E4A
-P 7925 2850
-AR Path="/61B19E4A" Ref="TP?"  Part="1" 
-AR Path="/619940CA/61B19E4A" Ref="TP2"  Part="1" 
-F 0 "TP2" H 7983 2968 50  0000 L CNN
-F 1 "TestPoint" H 7983 2877 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8125 2850 50  0001 C CNN
-F 3 "~" H 8125 2850 50  0001 C CNN
-	1    7925 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61B19E44
-P 8425 2500
-AR Path="/61B19E44" Ref="TP?"  Part="1" 
-AR Path="/619940CA/61B19E44" Ref="TP3"  Part="1" 
-F 0 "TP3" H 8483 2618 50  0000 L CNN
-F 1 "TestPoint" H 8483 2527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8625 2500 50  0001 C CNN
-F 3 "~" H 8625 2500 50  0001 C CNN
-	1    8425 2500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Connector:TestPoint TP?
-U 1 1 61B19E3E
-P 7925 2500
-AR Path="/61B19E3E" Ref="TP?"  Part="1" 
-AR Path="/619940CA/61B19E3E" Ref="TP1"  Part="1" 
-F 0 "TP1" H 7983 2618 50  0000 L CNN
-F 1 "TestPoint" H 7983 2527 50  0000 L CNN
-F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 8125 2500 50  0001 C CNN
-F 3 "~" H 8125 2500 50  0001 C CNN
-	1    7925 2500
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+5V #PWR035
 U 1 1 61B44133
 P 5250 4050
@@ -543,30 +449,30 @@ F 3 "" H 3125 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8125 4175 8125 4350
+	8525 2150 8525 2325
 Wire Wire Line
-	8125 4350 8250 4350
+	8525 2325 8650 2325
 Wire Wire Line
-	8250 4450 8125 4450
+	8650 2425 8525 2425
 Wire Wire Line
-	8125 4450 8125 4600
+	8525 2425 8525 2575
 $Comp
 L Connector:Conn_01x02_Female J6
 U 1 1 619B0A12
-P 8450 4350
-F 0 "J6" H 8478 4326 50  0000 L CNN
-F 1 "Conn_01x02_Female" V 8625 3975 50  0000 L CNN
-F 2 "Board:SolderWire_1x02_P2.00mm" H 8450 4350 50  0001 C CNN
-F 3 "~" H 8450 4350 50  0001 C CNN
-	1    8450 4350
+P 8850 2325
+F 0 "J6" H 8878 2301 50  0000 L CNN
+F 1 "Conn_01x02_Female" V 9025 1950 50  0000 L CNN
+F 2 "Board:SolderWire_1x02_P2.00mm" H 8850 2325 50  0001 C CNN
+F 3 "~" H 8850 2325 50  0001 C CNN
+	1    8850 2325
 	1    0    0    -1  
 $EndComp
-Text Notes 8800 4475 0    50   ~ 0
+Text Notes 8050 3150 0    50   ~ 0
 LiPo Battery\nCapacity: 1000 mAh\nDimesions: 48mm x 30mm x 4.2mm
 Wire Wire Line
-	7675 4175 8125 4175
+	8075 2150 8525 2150
 Wire Wire Line
-	7675 4600 8125 4600
+	8075 2575 8525 2575
 $Comp
 L power:PWR_FLAG #FLG03
 U 1 1 6212F9C2
