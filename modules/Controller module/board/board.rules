@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 9016)
+    (start_pass_no 5729)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -67,9 +67,9 @@
     "Net-(D1-Pad2)" /BMS/CHRG "Net-(D4-Pad2)" /BMS/STDBY +5V "Net-(IC1-Pad3)" "Net-(IC1-Pad2)" "Net-(IC1-Pad1)"
     /BTN4 /BTN3 /BTN2 /BTN1 "/BTN-B" "/BTN-A" "/BTN-R" "/BTN-M"
     "/BTN-T" /BUZZER /IO16 /IO27 /IO26 /IO25 /IO22 /IO4
-    /IO21 /RX /TX /IMU/INT /IMU/AD0 /IMU/XCL /IMU/XDA /IO2
-    "Net-(C3-Pad1)" "Net-(C6-Pad1)" "Net-(C7-Pad1)" "Net-(J4-Pad1)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "/BTN-C" "Net-(D2-Pad2)"
-    "Net-(D3-Pad6)" "Net-(D3-Pad5)" "Net-(D3-Pad4)" "Net-(D5-Pad2)" /IO15 "Net-(R21-Pad1)" "Net-(SW2-Pad1)"
+    /IO21 /RX /TX /IO2 "Net-(C3-Pad1)" "Net-(J4-Pad1)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
+    "/BTN-C" "Net-(D2-Pad2)" "Net-(D3-Pad6)" "Net-(D3-Pad5)" "Net-(D3-Pad4)" "Net-(D5-Pad2)" /IO15 "Net-(SW2-Pad1)"
+    "Net-(R20-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
