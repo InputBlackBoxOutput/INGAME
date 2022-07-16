@@ -1,7 +1,7 @@
 (sym_lib_table
-  (lib (name ADXL345BCCZ)(type Legacy)(uri ${KIPRJMOD}/board.pretty/ADXL345BCCZ.lib)(options "")(descr ""))
-  (lib (name DW01A)(type Legacy)(uri ${KIPRJMOD}/board.pretty/DW01A.lib)(options "")(descr ""))
-  (lib (name FS8205A)(type Legacy)(uri ${KIPRJMOD}/board.pretty/FS8205A.lib)(options "")(descr ""))
-  (lib (name ME6211)(type Legacy)(uri ${KIPRJMOD}/board.pretty/ME6211.lib)(options "")(descr ""))
-  (lib (name TP4056)(type Legacy)(uri ${KIPRJMOD}/board.pretty/TP4056.lib)(options "")(descr ""))
+  (lib (name DW01A)(type Legacy)(uri ${KIPRJMOD}/library/symbols/DW01A.lib)(options "")(descr ""))
+  (lib (name FS8205A)(type Legacy)(uri ${KIPRJMOD}/library/symbols/FS8205A.lib)(options "")(descr ""))
+  (lib (name ME6211)(type Legacy)(uri ${KIPRJMOD}/library/symbols/ME6211.lib)(options "")(descr ""))
+  (lib (name TP4056)(type Legacy)(uri ${KIPRJMOD}/library/symbols/TP4056.lib)(options "")(descr ""))
+  (lib (name Board)(type Legacy)(uri ${KIPRJMOD}/library/symbols/Board.lib)(options "")(descr ""))
 )
