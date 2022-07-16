@@ -1,4 +1,4 @@
-(pcb "C:\Users\InputBlackBoxOutput\Desktop\INGAME - PCB\HID module\board\board.dsn"
+(pcb "C:\Users\InputBlackBoxOutput\Desktop\FIX\INGAME\modules\HID module\board\board.dsn"
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -48,6 +48,14 @@
     )
   )
   (placement
+    (component Resistor_SMD:R_0603_1608Metric
+      (place R5 162100 -80100 front 90 (PN 22R))
+      (place R4 164300 -80100 front 90 (PN 22R))
+    )
+    (component "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
+      (place SW2 152500 -93400 front 90 (PN SW_Push))
+      (place SW3 160800 -93400 front 90 (PN SW_Push))
+    )
     (component Board:SolderWire_1x06_P2.54mm
       (place J4 163400 -95700 back 180 (PN Conn_01x06_Female))
     )
@@ -63,8 +71,6 @@
       (place R7 159200 -101000 front 180 (PN 10k))
       (place R3 151000 -101000 front 180 (PN 10k))
       (place R6 158750 -84150 front 0 (PN 10k))
-      (place R5 163000 -81500 front 180 (PN 22R))
-      (place R4 163000 -78900 front 180 (PN 22R))
       (place R2 125600 -97500 front 0 (PN 10k))
       (place R1 163000 -84150 front 0 (PN 10k))
     )
@@ -77,10 +83,6 @@
     )
     (component Board:128x64OLED
       (place DS1 135480 -89750 front 180 (PN SSD1306))
-    )
-    (component "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
-      (place SW3 160800 -93400 front 90 (PN SW_Push))
-      (place SW2 152500 -93400 front 90 (PN SW_Push))
     )
     (component "Crystal:Crystal_SMD_HC49-SD"
       (place Y1 125400 -89300 front 90 (PN 16MHz))
@@ -118,13 +120,62 @@
       (place C7 130550 -92800 front 180 (PN 1uF))
       (place C6 146500 -99700 front 270 (PN 0.1uF))
       (place C5 142800 -99700 front 270 (PN 1uF))
-      (place C4 134500 -79600 front 0 (PN 22uF))
       (place C3 134500 -76500 front 0 (PN 10uF))
       (place C2 130550 -86300 front 0 (PN 22pF))
       (place C1 130588 -89550 front 0 (PN 22pF))
     )
+    (component Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder::1
+      (place C4 134500 -79600 front 0 (PN 22uF))
+    )
   )
   (library
+    (image Resistor_SMD:R_0603_1608Metric
+      (outline (path signal 100  -800 -412.5  -800 412.5))
+      (outline (path signal 100  -800 412.5  800 412.5))
+      (outline (path signal 100  800 412.5  800 -412.5))
+      (outline (path signal 100  800 -412.5  -800 -412.5))
+      (outline (path signal 120  -237.258 522.5  237.258 522.5))
+      (outline (path signal 120  -237.258 -522.5  237.258 -522.5))
+      (outline (path signal 50  -1480 -730  -1480 730))
+      (outline (path signal 50  -1480 730  1480 730))
+      (outline (path signal 50  1480 730  1480 -730))
+      (outline (path signal 50  1480 -730  -1480 -730))
+      (pin RoundRect[T]Pad_800x950_200.761_um 2 825 0)
+      (pin RoundRect[T]Pad_800x950_200.761_um 1 -825 0)
+    )
+    (image "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
+      (outline (path signal 120  2900 3250  -2900 3250))
+      (outline (path signal 120  3000 -3250  -3000 -3250))
+      (outline (path signal 120  3100 1300  3100 -1300))
+      (outline (path signal 120  -3100 1300  -3100 -1300))
+      (outline (path signal 100  -3000 3150  3000 3150))
+      (outline (path signal 100  3000 3150  3000 -3150))
+      (outline (path signal 100  3000 -3150  -3000 -3150))
+      (outline (path signal 100  -3000 -3150  -3000 3150))
+      (outline (path signal 50  -5050 3400  5050 3400))
+      (outline (path signal 50  5050 3400  5050 1300))
+      (outline (path signal 50  5050 1300  3250 1300))
+      (outline (path signal 50  3250 1300  3250 -1300))
+      (outline (path signal 50  3250 -1300  5050 -1300))
+      (outline (path signal 50  5050 -1300  5050 -3400))
+      (outline (path signal 50  5050 -3400  -5050 -3400))
+      (outline (path signal 50  -5050 -3400  -5050 -1300))
+      (outline (path signal 50  -5050 -1300  -3250 -1300))
+      (outline (path signal 50  -3250 -1300  -3250 1300))
+      (outline (path signal 50  -3250 1300  -5050 1300))
+      (outline (path signal 50  -5050 1300  -5050 3400))
+      (outline (path signal 100  1500 0  1418.73 -487.049  1183.71 -921.319  820.422 -1255.75
+            368.228 -1454.1  -123.869 -1494.88  -602.543 -1373.66  -1015.92 -1103.59
+            -1319.21 -713.921  -1479.54 -246.892  -1479.54 246.892  -1319.21 713.921
+            -1015.92 1103.59  -602.543 1373.66  -123.869 1494.88  368.228 1454.1
+            820.422 1255.75  1183.71 921.319  1418.73 487.049  1500 0))
+      (outline (path signal 120  -5100 2300  -5100 3300))
+      (outline (path signal 120  -5100 3300  -4100 3300))
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 3 -4000 -2250)
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 4 4000 -2250)
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 1 -4000 2250)
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 2 4000 2250)
+    )
     (image Board:SolderWire_1x06_P2.54mm
       (outline (path signal 50  -1800 -14450  -1800 1800))
       (outline (path signal 50  1750 -14450  -1800 -14450))
@@ -232,39 +283,6 @@
       (pin Oval[A]Pad_2000x1600_um (rotate 90) 1 -3620 10600)
       (pin Oval[A]Pad_2000x1600_um (rotate 90) 3 1460 10600)
       (pin Oval[A]Pad_2000x1600_um (rotate 90) 4 4000 10600)
-    )
-    (image "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
-      (outline (path signal 120  2900 3250  -2900 3250))
-      (outline (path signal 120  3000 -3250  -3000 -3250))
-      (outline (path signal 120  3100 1300  3100 -1300))
-      (outline (path signal 120  -3100 1300  -3100 -1300))
-      (outline (path signal 100  -3000 3150  3000 3150))
-      (outline (path signal 100  3000 3150  3000 -3150))
-      (outline (path signal 100  3000 -3150  -3000 -3150))
-      (outline (path signal 100  -3000 -3150  -3000 3150))
-      (outline (path signal 50  -5050 3400  5050 3400))
-      (outline (path signal 50  5050 3400  5050 1300))
-      (outline (path signal 50  5050 1300  3250 1300))
-      (outline (path signal 50  3250 1300  3250 -1300))
-      (outline (path signal 50  3250 -1300  5050 -1300))
-      (outline (path signal 50  5050 -1300  5050 -3400))
-      (outline (path signal 50  5050 -3400  -5050 -3400))
-      (outline (path signal 50  -5050 -3400  -5050 -1300))
-      (outline (path signal 50  -5050 -1300  -3250 -1300))
-      (outline (path signal 50  -3250 -1300  -3250 1300))
-      (outline (path signal 50  -3250 1300  -5050 1300))
-      (outline (path signal 50  -5050 1300  -5050 3400))
-      (outline (path signal 100  1500 0  1418.73 -487.049  1183.71 -921.319  820.422 -1255.75
-            368.228 -1454.1  -123.869 -1494.88  -602.543 -1373.66  -1015.92 -1103.59
-            -1319.21 -713.921  -1479.54 -246.892  -1479.54 246.892  -1319.21 713.921
-            -1015.92 1103.59  -602.543 1373.66  -123.869 1494.88  368.228 1454.1
-            820.422 1255.75  1183.71 921.319  1418.73 487.049  1500 0))
-      (outline (path signal 120  -5100 2300  -5100 3300))
-      (outline (path signal 120  -5100 3300  -4100 3300))
-      (pin Rect[T]Pad_1600x1400_um (rotate 180) 3 -4000 -2250)
-      (pin Rect[T]Pad_1600x1400_um (rotate 180) 4 4000 -2250)
-      (pin Rect[T]Pad_1600x1400_um (rotate 180) 1 -4000 2250)
-      (pin Rect[T]Pad_1600x1400_um (rotate 180) 2 4000 2250)
     )
     (image "Crystal:Crystal_SMD_HC49-SD"
       (outline (path signal 100  -5700 2350  -5700 -2350))
@@ -581,6 +599,20 @@
       (pin RoundRect[T]Pad_1175x1450_250.951_um 2 1037.5 0)
       (pin RoundRect[T]Pad_1175x1450_250.951_um 1 -1037.5 0)
     )
+    (image Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder::1
+      (outline (path signal 50  1880 -980  -1880 -980))
+      (outline (path signal 50  1880 980  1880 -980))
+      (outline (path signal 50  -1880 980  1880 980))
+      (outline (path signal 50  -1880 -980  -1880 980))
+      (outline (path signal 120  -261.252 -735  261.252 -735))
+      (outline (path signal 120  -261.252 735  261.252 735))
+      (outline (path signal 100  1000 -625  -1000 -625))
+      (outline (path signal 100  1000 625  1000 -625))
+      (outline (path signal 100  -1000 625  1000 625))
+      (outline (path signal 100  -1000 -625  -1000 625))
+      (pin RoundRect[T]Pad_1175x1450_250.951_um 1 -1037.5 0)
+      (pin RoundRect[T]Pad_1175x1450_250.951_um 2 1037.5 0)
+    )
     (padstack Oval[A]Pad_1000x1600_um
       (shape (path F.Cu 1000  0 -300  0 300))
       (shape (path B.Cu 1000  0 -300  0 300))
@@ -615,6 +647,20 @@
             497.592 299.009  500 250  500 -250  497.592 -299.009  478.47 -395.142
             440.961 -485.698  386.505 -567.197  317.197 -636.505  235.698 -690.961
             145.142 -728.47  49.009 -747.592  0 -750  -500 -750  -500 750))
+      (attach off)
+    )
+    (padstack RoundRect[T]Pad_800x950_200.761_um
+      (shape (polygon F.Cu 0  234.862 472.711  268.664 463.654  300.38 448.864  329.047 428.792
+            353.792 404.047  373.864 375.381  388.654 343.664  397.711 309.862
+            400.761 275  400.761 -275  397.711 -309.862  388.654 -343.664
+            373.864 -375.38  353.792 -404.047  329.047 -428.792  300.381 -448.864
+            268.664 -463.654  234.862 -472.711  200 -475.761  -200 -475.761
+            -234.862 -472.711  -268.664 -463.654  -300.38 -448.864  -329.047 -428.792
+            -353.792 -404.047  -373.864 -375.381  -388.654 -343.664  -397.711 -309.862
+            -400.761 -275  -400.761 275  -397.711 309.862  -388.654 343.664
+            -373.864 375.38  -353.792 404.047  -329.047 428.792  -300.381 448.864
+            -268.664 463.654  -234.862 472.711  -200 475.761  200 475.761
+            234.862 472.711))
       (attach off)
     )
     (padstack RoundRect[T]Pad_1150x1400_250.95_um
@@ -711,7 +757,7 @@
         C3-1)
     )
     (net GND
-      (pins SW5-2 U1-1 DS1-1 SW3-2 SW2-2 J3-6 J2-6 J1-B1 J1-B12 J1-A1 J1-A12 J1-S1
+      (pins SW2-2 SW5-2 U1-1 DS1-1 SW3-2 J3-6 J2-6 J1-B1 J1-B12 J1-A1 J1-A12 J1-S1
         J1-S1@1 J1-S1@2 J1-S1@3 SW4-2 SW1-2 U3-38 U3-15 U3-1 U3-39 U2-43 U2-35 U2-33
         U2-23 U2-15 U2-5 R12-2 D4-1 D3-1 D2-1 D1-1 C7-2 C6-2 C5-2 C4-2 C3-2 C2-2 C1-2)
     )
@@ -752,19 +798,13 @@
       (pins SW5-1 R10-2 U3-3)
     )
     (net /D+
-      (pins U2-4 R5-1)
+      (pins R5-1 U2-4)
     )
     (net "/D-"
-      (pins U2-3 R4-1)
+      (pins R4-1 U2-3)
     )
     (net /IO2
       (pins U3-24 R12-1)
-    )
-    (net "Net-(J1-PadA7)"
-      (pins J1-B7 J1-A7 R4-2)
-    )
-    (net "Net-(J1-PadA6)"
-      (pins J1-B6 J1-A6 R5-2)
     )
     (net "Net-(C5-Pad1)"
       (pins U2-6 C5-1)
@@ -826,12 +866,17 @@
     (net /IO15
       (pins J4-6 U3-23)
     )
+    (net "/_D-"
+      (pins R4-2 J1-B7 J1-A7)
+    )
+    (net /_D+
+      (pins R5-2 J1-B6 J1-A6)
+    )
     (class kicad_default "" +3V3 +5V "/BTN-NEXT" "/BTN-OK" /D+ "/D-" /EN /IO0
-      /IO15 /IO16 /IO17 /IO18 /IO19 /IO2 /IO21 "/LED-C" "/LED-K" "/LED-P"
-      /MISO /MOSI /PF0 /PF1 /PF4 /PF5 /PF6 /PF7 /RESET /RX /SCK /SCL /SDA
-      /TX /XTAL1 /XTAL2 GND "Net-(C5-Pad1)" "Net-(C6-Pad1)" "Net-(D1-Pad2)"
-      "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)" "Net-(J1-PadA5)" "Net-(J1-PadA6)"
-      "Net-(J1-PadA7)" "Net-(J1-PadA8)" "Net-(J1-PadB5)" "Net-(J1-PadB8)"
+      /IO15 /IO16 /IO17 /IO2 "/LED-C" "/LED-K" "/LED-P" /MISO /MOSI /PF5 /PF6
+      /PF7 /RESET /RX /SCK /SCL /SDA /TX /XTAL1 /XTAL2 /_D+ "/_D-" GND "Net-(C5-Pad1)"
+      "Net-(C6-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad2)" "Net-(D3-Pad2)" "Net-(D4-Pad2)"
+      "Net-(J1-PadA5)" "Net-(J1-PadA8)" "Net-(J1-PadB5)" "Net-(J1-PadB8)"
       "Net-(J2-Pad1)" "Net-(J2-Pad5)" "Net-(JP1-Pad2)" "Net-(JP2-Pad2)" "Net-(U2-Pad1)"
       "Net-(U2-Pad12)" "Net-(U2-Pad22)" "Net-(U2-Pad25)" "Net-(U2-Pad26)"
       "Net-(U2-Pad30)" "Net-(U2-Pad31)" "Net-(U2-Pad32)" "Net-(U2-Pad39)"
@@ -852,5 +897,43 @@
     )
   )
   (wiring
+    (wire (path F.Cu 200  162807 -82575  142607 -82575)(net /D+)(type protect))
+    (wire (path F.Cu 200  162100 -80925  162975 -81800)(net /D+)(type protect))
+    (wire (path F.Cu 200  141975 -83650  141800 -83825  141800 -84300)(net /D+)(type protect))
+    (wire (path F.Cu 200  162975 -82406.8  162807 -82575)(net /D+)(type protect))
+    (wire (path F.Cu 200  162975 -81800  162975 -82406.8)(net /D+)(type protect))
+    (wire (path F.Cu 200  141800 -83381.8  142607 -82575)(net /D+)(type protect))
+    (wire (path F.Cu 200  141800 -84300  141800 -83381.8)(net /D+)(type protect))
+    (wire (path F.Cu 200  142600 -83825  142600 -84300)(net "/D-")(type protect))
+    (wire (path F.Cu 200  142425 -83650  142600 -83825)(net "/D-")(type protect))
+    (wire (path F.Cu 200  162993 -83025  142793 -83025)(net "/D-")(type protect))
+    (wire (path F.Cu 200  163425 -82593.2  162993 -83025)(net "/D-")(type protect))
+    (wire (path F.Cu 200  163425 -81800  163425 -82593.2)(net "/D-")(type protect))
+    (wire (path F.Cu 200  164300 -80925  163425 -81800)(net "/D-")(type protect))
+    (wire (path F.Cu 200  142600 -83218.2  142793 -83025)(net "/D-")(type protect))
+    (wire (path F.Cu 200  142600 -84300  142600 -83218.2)(net "/D-")(type protect))
+    (wire (path F.Cu 200  156025 -81120  156050 -81145)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  156025 -79793.2  156025 -81120)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  160207 -78725  157093 -78725)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  162582 -79975  161457 -79975  160207 -78725)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  157093 -78725  156025 -79793.2)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  156050 -82060  156050 -81145)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  155940 -82170  156050 -82060)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  155150 -82170  155940 -82170)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  155050 -82070  155150 -82170)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  155050 -81145  155050 -82070)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  164300 -79275  163850 -79725)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  162832 -79725  162582 -79975)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  163850 -79725  162832 -79725)(net "/_D-")(type protect))
+    (wire (path F.Cu 200  155575 -79606.8  155575 -81120)(net /_D+)(type protect))
+    (wire (path F.Cu 200  156907 -78275  155575 -79606.8)(net /_D+)(type protect))
+    (wire (path F.Cu 200  155575 -81120  155550 -81145)(net /_D+)(type protect))
+    (wire (path F.Cu 200  160393 -78275  156907 -78275)(net /_D+)(type protect))
+    (wire (path F.Cu 200  161393 -79275  160393 -78275)(net /_D+)(type protect))
+    (wire (path F.Cu 200  162100 -79275  161393 -79275)(net /_D+)(type protect))
+    (wire (path F.Cu 200  154550 -80220  154550 -81145)(net /_D+)(type protect))
+    (wire (path F.Cu 200  154650 -80120  154550 -80220)(net /_D+)(type protect))
+    (wire (path F.Cu 200  155550 -80230  155440 -80120  154650 -80120)(net /_D+)(type protect))
+    (wire (path F.Cu 200  155550 -81145  155550 -80230)(net /_D+)(type protect))
   )
 )
