@@ -32,9 +32,11 @@ block diagram of the INGAME system
 ![](https://github.com/InputBlackBoxOutput/INGAME/blob/main/documents/images/HID-Module-Block-Diagram.drawio.png)
 
 ### Functions 
-- Act as a wireless gateway between the modules worn by the user and the computer. Connect with other modules wirelessly and the computer via USB as an HID device
-- Switch the game controls mapping depending on the use selected game. Receive data wirelessly and then map the data to controls of the selected game and send appropriate key strokes to the computer
-- Display a menu showing information about the system especially the game set by the user using the buttons
+- Act as a wireless gateway between the modules worn by the user and the computer
+- Connect with the computer via USB as an HID device
+- Receive data wirelessly and then map the data to controls of the selected game and send appropriate key strokes to the computer
+- Switch the game controls mapping depending on the user selected game
+- Display a menu showing information about the system
 
 ## Controller module
 ### Block diagram
@@ -43,7 +45,7 @@ block diagram of the INGAME system
 ### Functions
 - Connect with the HID module wirelessly
 - Send data associated with a button when a button is pressed
-- Read IMU data and compute equivalent mouse movement and send the data to the HID module
+- Read IMU data, compute equivalent mouse movement and send the data to the HID module
 - Calibrate the IMU device when the calibration button is pressed
 - Monitor battery level and sound a buzzer when the battery is low
 - Switch to power saving mode upon user inactivity
@@ -55,7 +57,7 @@ block diagram of the INGAME system
 
 ### Functions
 - Connect with the HID module wirelessly
-- Read accelerometer data, compute steps and send the data to the HID module
+- Read accelerometer data, detect steps and send the data to the HID module
 - Calibrate the IMU device when the calibration button is pressed
 - Monitor battery level and sound a buzzer when the battery is low
 - Switch to power saving mode upon user inactivity
