@@ -28,8 +28,6 @@ block diagram of the INGAME system
 
 
 ## HID module 
-### Block diagram
-![](https://github.com/InputBlackBoxOutput/INGAME/blob/main/documents/images/HID-Module-Block-Diagram.drawio.png)
 
 ### Functions 
 - Act as a wireless gateway between the modules worn by the user and the computer
@@ -39,8 +37,6 @@ block diagram of the INGAME system
 - Display a menu showing information about the system
 
 ## Controller module
-### Block diagram
-![](https://github.com/InputBlackBoxOutput/INGAME/blob/main/documents/images/Controller-Module-Block-Diagram.drawio.png)
 
 ### Functions
 - Connect with the HID module wirelessly
@@ -52,8 +48,6 @@ block diagram of the INGAME system
 - [Optional] Control a vibration motor to simulate gunfire which increases in intensity per trigger button press
 
 ## Pedometer module
-### Block diagram
-![](https://github.com/InputBlackBoxOutput/INGAME/blob/main/documents/images/Pedometer-Module-Block-Diagram.drawio.png)
 
 ### Functions
 - Connect with the HID module wirelessly
@@ -62,21 +56,5 @@ block diagram of the INGAME system
 - Monitor battery level and sound a buzzer when the battery is low
 - Switch to power saving mode upon user inactivity
 
-
-## TODO:
-- Controller module
-  - IMU daughter board: MMC5603NJ + ASM330LHHXTR
-  - Enclosure: Shaped like a rifle
-  - Firmware
-- Pedomenter module
-  - IMU daughter board: BMI088
-  - Enclosure: Cubiod shaped
-  - Firmware
-- HID module
-  - Enclosure: Cuboid shaped
-  - Firmware
-- README
-  - Improve block diagrams
-  - Add exploded view of 3D render
   
 ### Made with lots of ⏱️, 📚 and ☕ by InputBlackBoxOutput
