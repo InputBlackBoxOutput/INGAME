@@ -1,4 +1,4 @@
-19426020691034725
+19428049548848062
 Battery
 BatteryHolder_Bulgin_BX0036_1xC
 Bulgin Battery Holder, BX0036, Battery Type C (https://www.bulgin.com/products/pub/media/bulgin/data/Battery_holders.pdf)
@@ -301,6 +301,13 @@ battery CR-3032 coin cell vertical
 2
 2
 Board
+ASM330LHHXTR
+
+
+0
+14
+14
+Board
 ESP32-WROOM-32
 Single 2.4 GHz Wi-Fi and Bluetooth combo chip https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
 Single 2.4 GHz Wi-Fi and Bluetooth combo  chip
@@ -315,7 +322,7 @@ GCT_USB4151-GF-C_REVA
 29
 29
 Board
-Inertial_Measurement_Unit_Board
+MMC5603NJ
 
 
 0

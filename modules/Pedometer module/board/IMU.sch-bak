@@ -1,0 +1,281 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 3650 4625 0    50   ~ 0
+Pin 1   - SDO/ SA0 : Determines I2C address\nPin 12 - CS High to enable I2C  
+Wire Notes Line
+	6275 4825 6275 1800
+Wire Notes Line
+	3350 1800 3350 4825
+Wire Notes Line
+	8700 1800 8700 4825
+Wire Notes Line
+	3350 4825 8700 4825
+Wire Notes Line
+	3350 1800 8700 1800
+$Comp
+L Connector_Generic:Conn_01x06 J5
+U 1 1 63B02AF4
+P 8150 3350
+F 0 "J5" H 8230 3342 50  0000 L CNN
+F 1 "Conn_01x04" V 8375 3100 50  0000 L CNN
+F 2 "Board:SolderWire_1x06_P2.54mm" H 8150 3350 50  0001 C CNN
+F 3 "~" H 8150 3350 50  0001 C CNN
+	1    8150 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0105
+U 1 1 63B03AE9
+P 6900 2800
+F 0 "#PWR0105" H 6900 2650 50  0001 C CNN
+F 1 "+3V3" H 6915 2973 50  0000 C CNN
+F 2 "" H 6900 2800 50  0001 C CNN
+F 3 "" H 6900 2800 50  0001 C CNN
+	1    6900 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR0106
+U 1 1 63B041DF
+P 7750 3025
+F 0 "#PWR0106" H 7750 2875 50  0001 C CNN
+F 1 "+3V3" H 7765 3198 50  0000 C CNN
+F 2 "" H 7750 3025 50  0001 C CNN
+F 3 "" H 7750 3025 50  0001 C CNN
+	1    7750 3025
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 3025 7750 3150
+Wire Wire Line
+	7750 3150 7950 3150
+Wire Wire Line
+	7950 3650 7750 3650
+Wire Wire Line
+	7750 3650 7750 3750
+$Comp
+L Device:R_Small_US R13
+U 1 1 63B06C28
+P 6900 3000
+F 0 "R13" H 6832 2954 50  0000 R CNN
+F 1 "10k" H 6832 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6900 3000 50  0001 C CNN
+F 3 "~" H 6900 3000 50  0001 C CNN
+	1    6900 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R_Small_US R14
+U 1 1 63B07DA1
+P 7225 3000
+F 0 "R14" H 7157 2954 50  0000 R CNN
+F 1 "10k" H 7157 3045 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 7225 3000 50  0001 C CNN
+F 3 "~" H 7225 3000 50  0001 C CNN
+	1    7225 3000
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6900 2800 6900 2850
+Wire Wire Line
+	6900 2850 7225 2850
+Wire Wire Line
+	7225 2850 7225 2900
+Connection ~ 6900 2850
+Wire Wire Line
+	6900 2850 6900 2900
+Wire Wire Line
+	7950 3250 6900 3250
+Wire Wire Line
+	6900 3100 6900 3250
+Wire Wire Line
+	7225 3100 7225 3350
+$Comp
+L power:GND #PWR0107
+U 1 1 63B0AE23
+P 7750 3750
+F 0 "#PWR0107" H 7750 3500 50  0001 C CNN
+F 1 "GND" H 7755 3577 50  0000 C CNN
+F 2 "" H 7750 3750 50  0001 C CNN
+F 3 "" H 7750 3750 50  0001 C CNN
+	1    7750 3750
+	1    0    0    -1  
+$EndComp
+Text GLabel 6675 3350 0    50   Input ~ 0
+SCL
+Text GLabel 6675 3250 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	6675 3250 6900 3250
+Connection ~ 6900 3250
+Wire Wire Line
+	6675 3350 7225 3350
+Connection ~ 7225 3350
+Wire Wire Line
+	7225 3350 7950 3350
+Text GLabel 7750 3450 0    50   Input ~ 0
+INT1
+Text GLabel 7750 3550 0    50   Input ~ 0
+INT2
+Wire Wire Line
+	7750 3450 7950 3450
+Wire Wire Line
+	7750 3550 7950 3550
+Text GLabel 4175 3375 0    50   Input ~ 0
+SDA
+Wire Wire Line
+	4325 3375 4175 3375
+Text GLabel 4175 3475 0    50   Input ~ 0
+SCL
+Wire Wire Line
+	4325 3475 4175 3475
+Text GLabel 5675 3075 2    50   Input ~ 0
+INT2
+Wire Wire Line
+	5525 3075 5675 3075
+Text GLabel 5675 2975 2    50   Input ~ 0
+INT1
+Wire Wire Line
+	5525 2975 5675 2975
+$Comp
+L power:+3V3 #PWR0108
+U 1 1 63A2BC7C
+P 4975 2175
+F 0 "#PWR0108" H 4975 2025 50  0001 C CNN
+F 1 "+3V3" H 4990 2348 50  0000 C CNN
+F 2 "" H 4975 2175 50  0001 C CNN
+F 3 "" H 4975 2175 50  0001 C CNN
+	1    4975 2175
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 3575 4325 3575
+Wire Wire Line
+	3650 3475 3650 3575
+$Comp
+L power:+3V3 #PWR0104
+U 1 1 63A4A814
+P 3650 3475
+F 0 "#PWR0104" H 3650 3325 50  0001 C CNN
+F 1 "+3V3" H 3665 3648 50  0000 C CNN
+F 2 "" H 3650 3475 50  0001 C CNN
+F 3 "" H 3650 3475 50  0001 C CNN
+	1    3650 3475
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4975 2275 4975 2575
+Connection ~ 4975 2275
+Wire Wire Line
+	5275 2275 4975 2275
+Wire Wire Line
+	5275 2325 5275 2275
+Wire Wire Line
+	4975 2175 4975 2275
+Wire Wire Line
+	4975 2575 5025 2575
+Connection ~ 4975 2575
+Wire Wire Line
+	5275 2575 5275 2525
+$Comp
+L power:GND #PWR0103
+U 1 1 63A3AF6F
+P 5275 2575
+F 0 "#PWR0103" H 5275 2325 50  0001 C CNN
+F 1 "GND" H 5280 2402 50  0000 C CNN
+F 2 "" H 5275 2575 50  0001 C CNN
+F 3 "" H 5275 2575 50  0001 C CNN
+	1    5275 2575
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 2575 4975 2575
+$Comp
+L Device:C_Small C4
+U 1 1 63A39BBA
+P 5275 2425
+F 0 "C4" H 5367 2471 50  0000 L CNN
+F 1 "100nF" H 5367 2380 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 5275 2425 50  0001 C CNN
+F 3 "~" H 5275 2425 50  0001 C CNN
+	1    5275 2425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4925 2575 4925 2675
+Connection ~ 4225 2975
+Wire Wire Line
+	3950 2975 4225 2975
+Connection ~ 4225 3075
+Wire Wire Line
+	4225 3175 4225 3075
+Wire Wire Line
+	4325 3175 4225 3175
+Wire Wire Line
+	4225 2975 4325 2975
+Wire Wire Line
+	4225 3075 4225 2975
+Wire Wire Line
+	4325 3075 4225 3075
+Wire Wire Line
+	3950 3025 3950 2975
+$Comp
+L power:GND #PWR0102
+U 1 1 63A35DA4
+P 3950 3025
+F 0 "#PWR0102" H 3950 2775 50  0001 C CNN
+F 1 "GND" H 3955 2852 50  0000 C CNN
+F 2 "" H 3950 3025 50  0001 C CNN
+F 3 "" H 3950 3025 50  0001 C CNN
+	1    3950 3025
+	1    0    0    -1  
+$EndComp
+Connection ~ 4975 3950
+Wire Wire Line
+	5025 3950 4975 3950
+Wire Wire Line
+	5025 3875 5025 3950
+Wire Wire Line
+	4975 3950 4975 4050
+Wire Wire Line
+	4925 3950 4975 3950
+Wire Wire Line
+	4925 3950 4925 3875
+$Comp
+L power:GND #PWR0101
+U 1 1 63A2C7F2
+P 4975 4050
+F 0 "#PWR0101" H 4975 3800 50  0001 C CNN
+F 1 "GND" H 4980 3877 50  0000 C CNN
+F 2 "" H 4975 4050 50  0001 C CNN
+F 3 "" H 4975 4050 50  0001 C CNN
+	1    4975 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5025 2575 5025 2675
+$Comp
+L Sensor_Motion:LSM6DS3 U3
+U 1 1 63A2B005
+P 4925 3275
+F 0 "U3" H 5569 3321 50  0000 L CNN
+F 1 "LSM6DS3" H 5569 3230 50  0000 L CNN
+F 2 "Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y" H 4525 2575 50  0001 L CNN
+F 3 "www.st.com/resource/en/datasheet/lsm6ds3.pdf" H 5025 2625 50  0001 C CNN
+	1    4925 3275
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

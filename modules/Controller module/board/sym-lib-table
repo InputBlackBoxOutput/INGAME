@@ -4,4 +4,6 @@
   (lib (name ME6211)(type Legacy)(uri ${KIPRJMOD}/library/symbols/ME6211.lib)(options "")(descr ""))
   (lib (name TP4056)(type Legacy)(uri ${KIPRJMOD}/library/symbols/TP4056.lib)(options "")(descr ""))
   (lib (name Board)(type Legacy)(uri ${KIPRJMOD}/library/symbols/Board.lib)(options "")(descr ""))
+  (lib (name MMC5603NJ)(type Legacy)(uri ${KIPRJMOD}/library/symbols/MMC5603NJ.lib)(options "")(descr ""))
+  (lib (name ASM330LHHXTR)(type Legacy)(uri ${KIPRJMOD}/library/symbols/ASM330LHHXTR.lib)(options "")(descr ""))
 )

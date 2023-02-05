@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 4040)
+    (start_pass_no 18)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -65,10 +65,10 @@
   (class "kicad_default"
     GND "Net-(BZ1-Pad1)" /EN VCC /IO0 +3V3 "/BMS/BATT-" /BMS/BATT+
     "Net-(D1-Pad2)" /BMS/CHRG "Net-(D4-Pad2)" /BMS/STDBY +5V "Net-(IC1-Pad3)" "Net-(IC1-Pad2)" "Net-(IC1-Pad1)"
-    /BUZZER /IO35 /IO18 /IO34 /IO17 /IO33 /IO16 /IO32
-    /IO27 /IO14 /IO13 /IO12 /IO5 /IO4 /RX /TX
-    /IO2 "Net-(SW3-Pad1)" "Net-(C3-Pad1)" "Net-(Q1-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad6)" "Net-(D3-Pad5)" "Net-(D3-Pad4)"
-    "Net-(D5-Pad2)" /IO15 "Net-(R21-Pad1)" /SDA /SCL "/LED-B" "/LED-G" "/LED-R"
+    /BUZZER /IO35 /IO34 /IO33 /IO16 /IO32 /IO27 /IO14
+    /IO13 /IO12 /IO5 /IO4 /RX /TX /IO2 "Net-(SW3-Pad1)"
+    "Net-(C3-Pad1)" "Net-(Q1-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad6)" "Net-(D3-Pad5)" "Net-(D3-Pad4)" "Net-(D5-Pad2)" /IO15
+    "Net-(R21-Pad1)" "/LED-B" "/LED-G" "/LED-R" SDA SCL INT1 INT2
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
