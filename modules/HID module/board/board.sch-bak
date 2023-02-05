@@ -57,9 +57,9 @@ F 3 "" H 1500 2700 50  0001 C CNN
 	1    1500 2700
 	1    0    0    -1  
 $EndComp
-Text Label 2825 1750 2    50   ~ 0
+Text Label 2825 1850 2    50   ~ 0
 D+
-Text Label 2825 1550 2    50   ~ 0
+Text Label 2825 1650 2    50   ~ 0
 D-
 Wire Wire Line
 	2500 3825 2500 3975
@@ -575,27 +575,12 @@ Wire Wire Line
 Connection ~ 1500 2625
 Wire Wire Line
 	1500 2625 1500 2700
-$Comp
-L Connector:USB_C_Receptacle_USB2.0 J1
-U 1 1 6230F664
-P 1500 1650
-F 0 "J1" H 1607 2517 50  0000 C CNN
-F 1 "USB_C_Receptacle_USB2.0" H 1607 2426 50  0000 C CNN
-F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1650 1650 50  0001 C CNN
-F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1650 1650 50  0001 C CNN
-	1    1500 1650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2100 1550 2175 1550
 Wire Wire Line
 	2100 1750 2175 1750
 Wire Wire Line
-	2175 1550 2175 1650
-Wire Wire Line
 	2175 1650 2100 1650
-Wire Wire Line
-	2175 1750 2175 1850
 Wire Wire Line
 	2175 1850 2100 1850
 Text Notes 4875 7125 0    50   ~ 0
@@ -931,8 +916,6 @@ F 3 "~" H 3550 3725 50  0001 C CNN
 	1    3550 3725
 	1    0    0    -1  
 $EndComp
-NoConn ~ 2100 1250
-NoConn ~ 2100 1350
 $Comp
 L Regulator_Linear:AMS1117-3.3 U1
 U 1 1 6216EABA
@@ -1478,37 +1461,98 @@ Wire Notes Line
 $Comp
 L Device:R_Small_US R5
 U 1 1 619AA856
-P 2475 1750
-F 0 "R5" V 2575 1700 50  0000 C CNN
-F 1 "22R" V 2575 1850 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2475 1750 50  0001 C CNN
-F 3 "~" H 2475 1750 50  0001 C CNN
-	1    2475 1750
+P 2475 1850
+F 0 "R5" V 2575 1800 50  0000 C CNN
+F 1 "22R" V 2575 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2475 1850 50  0001 C CNN
+F 3 "~" H 2475 1850 50  0001 C CNN
+	1    2475 1850
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	2575 1750 2875 1750
-Wire Wire Line
-	2875 1550 2575 1550
-Text Label 2225 1550 0    50   ~ 0
+Text Label 2225 1650 0    50   ~ 0
 _D-
 $Comp
 L Device:R_Small_US R4
 U 1 1 619A9A9A
-P 2475 1550
-F 0 "R4" V 2375 1500 50  0000 C CNN
-F 1 "22R" V 2375 1650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2475 1550 50  0001 C CNN
-F 3 "~" H 2475 1550 50  0001 C CNN
-	1    2475 1550
+P 2475 1650
+F 0 "R4" V 2575 1600 50  0000 C CNN
+F 1 "22R" V 2575 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2475 1650 50  0001 C CNN
+F 3 "~" H 2475 1650 50  0001 C CNN
+	1    2475 1650
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	2175 1550 2375 1550
-Connection ~ 2175 1550
+	2175 1650 2375 1650
 Wire Wire Line
-	2175 1750 2375 1750
-Connection ~ 2175 1750
-Text Label 2225 1750 0    50   ~ 0
+	2175 1850 2375 1850
+Text Label 2225 1850 0    50   ~ 0
 _D+
+$Comp
+L Connector:USB_C_Receptacle_USB2.0 J1
+U 1 1 6230F664
+P 1500 1650
+F 0 "J1" H 1607 2517 50  0000 C CNN
+F 1 "USB_C_Receptacle_USB2.0" H 1607 2426 50  0000 C CNN
+F 2 "Connector_USB:USB_C_Receptacle_HRO_TYPE-C-31-M-12" H 1650 1650 50  0001 C CNN
+F 3 "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" H 1650 1650 50  0001 C CNN
+	1    1500 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63D7B37D
+P 2300 1250
+F 0 "R?" V 2200 1200 50  0000 C CNN
+F 1 "5k1" V 2200 1350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2300 1250 50  0001 C CNN
+F 3 "~" H 2300 1250 50  0001 C CNN
+	1    2300 1250
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 63D7CAEF
+P 2625 1250
+F 0 "#PWR?" H 2625 1000 50  0001 C CNN
+F 1 "GND" H 2630 1077 50  0000 C CNN
+F 2 "" H 2625 1250 50  0001 C CNN
+F 3 "" H 2625 1250 50  0001 C CNN
+	1    2625 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small_US R?
+U 1 1 63D7D4EA
+P 2300 1350
+F 0 "R?" V 2400 1300 50  0000 C CNN
+F 1 "5k1" V 2400 1450 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" H 2300 1350 50  0001 C CNN
+F 3 "~" H 2300 1350 50  0001 C CNN
+	1    2300 1350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2100 1250 2200 1250
+Wire Wire Line
+	2200 1350 2100 1350
+Wire Wire Line
+	2400 1350 2475 1350
+Wire Wire Line
+	2475 1350 2475 1250
+Wire Wire Line
+	2475 1250 2400 1250
+Wire Wire Line
+	2475 1250 2625 1250
+Connection ~ 2475 1250
+Wire Wire Line
+	2575 1650 2825 1650
+Wire Wire Line
+	2825 1850 2575 1850
+Connection ~ 2175 1650
+Connection ~ 2175 1850
+Wire Wire Line
+	2175 1550 2175 1650
+Wire Wire Line
+	2175 1750 2175 1850
 $EndSCHEMATC
