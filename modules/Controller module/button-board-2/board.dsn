@@ -1,0 +1,177 @@
+(pcb "C:\Users\InputBlackBoxOutput\Desktop\Active Projects\NETHER\modules\Stick module\button-board-2\board.dsn"
+  (parser
+    (string_quote ")
+    (space_in_quoted_tokens on)
+    (host_cad "KiCad's Pcbnew")
+    (host_version "(5.1.12)-1")
+  )
+  (resolution um 10)
+  (unit um)
+  (structure
+    (layer F.Cu
+      (type signal)
+      (property
+        (index 0)
+      )
+    )
+    (layer B.Cu
+      (type signal)
+      (property
+        (index 1)
+      )
+    )
+    (boundary
+      (path pcb 0  154285 -80020.4  154563 -80081  154831 -80180.7  155081 -80317.5
+            155310 -80488.5  155511 -80690.3  155683 -80918.7  155819 -81169.2
+            155919 -81436.5  155980 -81715.4  156000 -82000  156000 -88000
+            155980 -88284.6  155919 -88563.5  155819 -88830.8  155683 -89081.3
+            155511 -89309.7  155310 -89511.5  155081 -89682.5  154831 -89819.3
+            154563 -89919  154285 -89979.6  154000 -90000  117000 -90000
+            116715 -89979.6  116437 -89919  116169 -89819.3  115919 -89682.5
+            115690 -89511.5  115489 -89309.7  115317 -89081.3  115181 -88830.8
+            115081 -88563.5  115020 -88284.6  115000 -88000  115000 -82000
+            115020 -81715.4  115081 -81436.5  115181 -81169.2  115317 -80918.7
+            115489 -80690.3  115690 -80488.5  115919 -80317.5  116169 -80180.7
+            116437 -80081  116715 -80020.4  117000 -80000  154000 -80000
+            154285 -80020.4)
+    )
+    (via "Via[0-1]_800:400_um")
+    (rule
+      (width 200)
+      (clearance 150.1)
+      (clearance 150.1 (type default_smd))
+      (clearance 37.5 (type smd_smd))
+    )
+  )
+  (placement
+    (component "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
+      (place SW3 146000 -85000 front 0 (PN BTN))
+      (place SW2 135500 -85000 front 0 (PN BTN))
+      (place SW1 125000 -85000 front 0 (PN BTN))
+    )
+    (component Board:SolderWire_1x04_P2.54mm
+      (place J1 141500 -88000 back 90 (PN Conn_01x04))
+    )
+    (component MountingHole:MountingHole_2.2mm_M2
+      (place H4 117000 -88000 front 0 (PN MountingHole))
+      (place H3 154000 -88000 front 0 (PN MountingHole))
+      (place H2 154000 -82000 front 0 (PN MountingHole))
+      (place H1 117000 -82000 front 0 (PN MountingHole))
+    )
+  )
+  (library
+    (image "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
+      (outline (path signal 120  -5100 3300  -4100 3300))
+      (outline (path signal 120  -5100 2300  -5100 3300))
+      (outline (path signal 100  1500 0  1418.73 -487.049  1183.71 -921.319  820.422 -1255.75
+            368.228 -1454.1  -123.869 -1494.88  -602.543 -1373.66  -1015.92 -1103.59
+            -1319.21 -713.921  -1479.54 -246.892  -1479.54 246.892  -1319.21 713.921
+            -1015.92 1103.59  -602.543 1373.66  -123.869 1494.88  368.228 1454.1
+            820.422 1255.75  1183.71 921.319  1418.73 487.049  1500 0))
+      (outline (path signal 50  -5050 1300  -5050 3400))
+      (outline (path signal 50  -3250 1300  -5050 1300))
+      (outline (path signal 50  -3250 -1300  -3250 1300))
+      (outline (path signal 50  -5050 -1300  -3250 -1300))
+      (outline (path signal 50  -5050 -3400  -5050 -1300))
+      (outline (path signal 50  5050 -3400  -5050 -3400))
+      (outline (path signal 50  5050 -1300  5050 -3400))
+      (outline (path signal 50  3250 -1300  5050 -1300))
+      (outline (path signal 50  3250 1300  3250 -1300))
+      (outline (path signal 50  5050 1300  3250 1300))
+      (outline (path signal 50  5050 3400  5050 1300))
+      (outline (path signal 50  -5050 3400  5050 3400))
+      (outline (path signal 100  -3000 -3150  -3000 3150))
+      (outline (path signal 100  3000 -3150  -3000 -3150))
+      (outline (path signal 100  3000 3150  3000 -3150))
+      (outline (path signal 100  -3000 3150  3000 3150))
+      (outline (path signal 120  -3100 1300  -3100 -1300))
+      (outline (path signal 120  3100 1300  3100 -1300))
+      (outline (path signal 120  3000 -3250  -3000 -3250))
+      (outline (path signal 120  2900 3250  -2900 3250))
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 3 -4000 -2250)
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 4 4000 -2250)
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 1 -4000 2250)
+      (pin Rect[T]Pad_1600x1400_um (rotate 180) 2 4000 2250)
+    )
+    (image Board:SolderWire_1x04_P2.54mm
+      (outline (path signal 100  -1270 1270  635 1270))
+      (outline (path signal 100  635 1270  1270 635))
+      (outline (path signal 100  1270 635  1250 -9000))
+      (outline (path signal 100  1270 -8970  -1270 -8970))
+      (outline (path signal 100  -1250 -9000  -1270 1270))
+      (outline (path signal 120  -1330 -1270  1330 -1270))
+      (outline (path signal 120  -1330 -1270  -1330 -9030))
+      (outline (path signal 120  -1330 -9030  1330 -9030))
+      (outline (path signal 120  1330 -1270  1330 -9030))
+      (outline (path signal 120  1330 1330  1330 0))
+      (outline (path signal 120  0 1330  1330 1330))
+      (outline (path signal 50  -1800 1800  1750 1800))
+      (outline (path signal 50  1750 1800  1750 -9450))
+      (outline (path signal 50  1750 -9450  -1800 -9450))
+      (outline (path signal 50  -1800 -9450  -1800 1800))
+      (pin Rect[T]Pad_2000x1500_um 1 0 0)
+      (pin Oval[T]Pad_2000x1500_um 2 0 -2540)
+      (pin Oval[T]Pad_2000x1500_um 3 0 -5080)
+      (pin Oval[T]Pad_2000x1500_um 4 0 -7620)
+    )
+    (image MountingHole:MountingHole_2.2mm_M2
+      (outline (path signal 50  2450 0  2373.03 -609.29  2146.95 -1180.3  1785.97 -1677.14
+            1312.78 -2068.6  757.092 -2330.09  153.837 -2445.16  -459.084 -2406.6
+            -1043.16 -2216.83  -1561.69 -1887.76  -1982.09 -1440.07  -2277.95 -901.905
+            -2430.68 -307.066  -2430.68 307.066  -2277.95 901.905  -1982.09 1440.07
+            -1561.69 1887.76  -1043.16 2216.83  -459.084 2406.6  153.837 2445.16
+            757.092 2330.09  1312.78 2068.6  1785.97 1677.14  2146.95 1180.3
+            2373.03 609.29  2450 0))
+      (outline (path signal 150  2200 0  2118.42 -593.553  1879.72 -1143.09  1501.62 -1607.84
+            1012.14 -1953.35  447.603 -2153.99  -150.133 -2194.87  -736.735 -2072.97
+            -1268.7 -1797.33  -1706.57 -1388.39  -2017.87 -876.482  -2179.51 -299.567
+            -2179.51 299.567  -2017.87 876.482  -1706.57 1388.39  -1268.7 1797.33
+            -736.735 2072.97  -150.133 2194.87  447.603 2153.99  1012.14 1953.35
+            1501.62 1607.84  1879.72 1143.09  2118.42 593.553  2200 0))
+      (keepout "" (circle F.Cu 2200))
+      (keepout "" (circle B.Cu 2200))
+    )
+    (padstack Oval[T]Pad_2000x1500_um
+      (shape (path F.Cu 1500  -250 0  250 0))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_2000x1500_um
+      (shape (rect F.Cu -1000 -750 1000 750))
+      (attach off)
+    )
+    (padstack Rect[T]Pad_1600x1400_um
+      (shape (rect F.Cu -800 -700 800 700))
+      (attach off)
+    )
+    (padstack "Via[0-1]_800:400_um"
+      (shape (circle F.Cu 800))
+      (shape (circle B.Cu 800))
+      (attach off)
+    )
+  )
+  (network
+    (net GND
+      (pins SW3-1 SW2-1 SW1-1 J1-4)
+    )
+    (net /2_1
+      (pins SW1-2 J1-1)
+    )
+    (net /2_2
+      (pins SW2-2 J1-2)
+    )
+    (net /2_3
+      (pins SW3-2 J1-3)
+    )
+    (class kicad_default "" /2_1 /2_2 /2_3 GND
+      (circuit
+        (use_via Via[0-1]_800:400_um)
+      )
+      (rule
+        (width 200)
+        (clearance 150.1)
+      )
+    )
+  )
+  (wiring
+  )
+)
