@@ -1,34 +1,23 @@
 // PIN CONNECTIONS
 
-// TRIGGER
-#define B3_1 0
-// STOCK
-#define B3_2 0
-//MAGZINE
-#define B3_3 0
+#define B31_PIN 13 // TRIGGER
+#define B32_PIN 5  // STOCK
+#define B33_PIN 12 // MAGZINE
 
-// BARREL BUTTONS
-#define B1_1 0
-#define B1_2 0
-#define B1_3 0
-#define B1_4 0
+#define B11_PIN 35
+#define B12_PIN 34
+#define B13_PIN 33
+#define B14_PIN 32
 
-// BARREL SELECT BUTTONS
-#define B2_1 0
-#define B2_2 0
+#define B21_PIN 17
+#define B22_PIN 16
+#define B23_PIN 23
 
-// LED
-#define _LED 0
-#define LEDR 0
-#define LEDG 0
-#define LEDB 0
+#define LEDR_PIN 25
+#define LEDG_PIN 26
+#define LEDB_PIN 27
 
-// BUZZER
-#define BUZZER 0
+#define LAZER_PIN  14
+#define BUZZER_PIN 15
 
-// Battery
-#define BATT_VLG 0
-
-// MPU6050
-// #define SDA
-// #define SCL
+#define BATT_ADC_PIN 4

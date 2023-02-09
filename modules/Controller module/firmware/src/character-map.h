@@ -1,5 +1,5 @@
-// CHARACTER MAP
 
+// CHARACTER MAP
 #define JUMP_CHAR 'J'
 #define WALK_CHAR 'W'
 #define EXTRA_1_CHAR 'A'
