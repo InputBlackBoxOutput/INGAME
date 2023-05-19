@@ -11,18 +11,18 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 907)
+    (start_pass_no 7573)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 2.7)
+      (against_preferred_direction_trace_costs 2.4)
     )
     (layer_rule B.Cu
       (active on)
       (preferred_direction vertical)
       (preferred_direction_trace_costs 1.0)
-      (against_preferred_direction_trace_costs 1.6)
+      (against_preferred_direction_trace_costs 1.7)
     )
   )
   (rule
@@ -65,11 +65,12 @@
   (class "kicad_default"
     GND "Net-(BZ1-Pad1)" /EN VCC /IO0 +3V3 "/BMS/BATT-" /BMS/BATT+
     "Net-(D1-Pad2)" /BMS/CHRG "Net-(D4-Pad2)" /BMS/STDBY +5V "Net-(IC1-Pad3)" "Net-(IC1-Pad2)" "Net-(IC1-Pad1)"
-    /BTN4 /BTN3 /BTN2 /BTN1 "/BTN-B" "/BTN-A" "/BTN-R" "/BTN-M"
-    "/BTN-T" /IO27 /IO26 /IO25 /IO4 /RX /TX /IO2
-    "Net-(C3-Pad1)" "Net-(J4-Pad1)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "/BTN-C" "Net-(SW2-Pad1)" INT2 INT1
-    SDA SCL /IO14 "Net-(D2-Pad6)" "Net-(D2-Pad5)" "Net-(D2-Pad4)" "Net-(D3-Pad2)" /BUZZER
-    "Net-(R19-Pad1)"
+    /IO27 /IO26 /IO25 /IO4 /RX /TX /IO2 "Net-(C3-Pad1)"
+    "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" INT2 INT1 SDA SCL /IO14 "Net-(D2-Pad6)"
+    "Net-(D2-Pad5)" "Net-(D2-Pad4)" "Net-(D3-Pad2)" /BUZZER /IO12 /IO13 "/CS_1" "/CS_2"
+    "Net-(J3-Pad1)" /BTN/BTN1 /BTN/BTN2 /BTN/BTN3 /BTN/BTN4 "/BTN/BTN-T" "/BTN/BTN-M" "/BTN/BTN-S"
+    "/BTN/BTN-A" "/BTN/BTN-B" "/BTN/BTN-C" /IO32 "Net-(R17-Pad1)" "Net-(SW3-Pad1)" DATA CLK
+    LATCH "Net-(U6-Pad10)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
