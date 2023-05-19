@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -87,10 +87,10 @@ $EndComp
 Wire Wire Line
 	4825 3425 4900 3425
 $Comp
-L Device:R_Small_US R22
+L Device:R_Small_US R20
 U 1 1 63B138DD
 P 6500 3575
-F 0 "R22" H 6568 3621 50  0000 L CNN
+F 0 "R20" H 6568 3621 50  0000 L CNN
 F 1 "10k" H 6568 3530 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6500 3575 50  0001 C CNN
 F 3 "~" H 6500 3575 50  0001 C CNN
@@ -98,10 +98,10 @@ F 3 "~" H 6500 3575 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R_Small_US R23
+L Device:R_Small_US R21
 U 1 1 63B146C8
 P 6825 3575
-F 0 "R23" H 6893 3621 50  0000 L CNN
+F 0 "R21" H 6893 3621 50  0000 L CNN
 F 1 "10k" H 6893 3530 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder" H 6825 3575 50  0001 C CNN
 F 3 "~" H 6825 3575 50  0001 C CNN
@@ -113,10 +113,10 @@ Wire Wire Line
 Text Label 7550 2375 2    50   ~ 0
 SDA
 $Comp
-L Device:C_Small C6
+L Device:C_Small C5
 U 1 1 63B1B7EF
 P 7750 2700
-F 0 "C6" H 7842 2746 50  0000 L CNN
+F 0 "C5" H 7842 2746 50  0000 L CNN
 F 1 "2.2uF" H 7842 2655 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 7750 2700 50  0001 C CNN
 F 3 "~" H 7750 2700 50  0001 C CNN
@@ -181,10 +181,10 @@ Connection ~ 4200 2675
 Wire Wire Line
 	4200 2675 4325 2675
 $Comp
-L Device:C_Small C5
+L Device:C_Small C4
 U 1 1 63B2365E
 P 3875 2625
-F 0 "C5" H 3525 2700 50  0000 L CNN
+F 0 "C4" H 3525 2700 50  0000 L CNN
 F 1 "100nF" H 3525 2575 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder" H 3875 2625 50  0001 C CNN
 F 3 "~" H 3875 2625 50  0001 C CNN
@@ -340,10 +340,10 @@ Wire Wire Line
 	6300 3950 6825 3950
 Connection ~ 6825 3950
 $Comp
-L Connector:Conn_01x06_Male J7
+L Connector:Conn_01x06_Male J6
 U 1 1 63B307C0
 P 7550 4050
-F 0 "J7" H 7522 3932 50  0000 R CNN
+F 0 "J6" H 7522 3932 50  0000 R CNN
 F 1 "Conn_01x06_Male" V 7350 4325 50  0000 R CNN
 F 2 "Board:SolderWire_1x06_P2.54mm" H 7550 4050 50  0001 C CNN
 F 3 "~" H 7550 4050 50  0001 C CNN

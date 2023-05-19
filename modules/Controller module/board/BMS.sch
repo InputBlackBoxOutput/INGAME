@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 2 4
 Title ""
 Date ""
 Rev ""
@@ -14,10 +14,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_Small_US R16
+L Device:R_Small_US R14
 U 1 1 619958ED
 P 2975 4425
-F 0 "R16" H 3043 4471 50  0000 L CNN
+F 0 "R14" H 3043 4471 50  0000 L CNN
 F 1 "1k" H 3043 4380 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 2975 4425 50  0001 C CNN
 F 3 "~" H 2975 4425 50  0001 C CNN
@@ -38,10 +38,10 @@ $EndComp
 Wire Wire Line
 	2975 4525 2975 4625
 $Comp
-L Device:R_Small_US R18
+L Device:R_Small_US R16
 U 1 1 619979BF
 P 3675 4425
-F 0 "R18" H 3743 4471 50  0000 L CNN
+F 0 "R16" H 3743 4471 50  0000 L CNN
 F 1 "1k" H 3743 4380 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3675 4425 50  0001 C CNN
 F 3 "~" H 3675 4425 50  0001 C CNN
@@ -113,10 +113,10 @@ F 3 "~" H 4000 2550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R_Small_US R17
+L Device:R_Small_US R15
 U 1 1 61A4EED8
 P 3650 2950
-F 0 "R17" H 3718 2996 50  0000 L CNN
+F 0 "R15" H 3718 2996 50  0000 L CNN
 F 1 "10k" H 3718 2905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 3650 2950 50  0001 C CNN
 F 3 "~" H 3650 2950 50  0001 C CNN
@@ -239,10 +239,10 @@ Wire Wire Line
 	7650 3225 7650 3075
 Connection ~ 7650 3225
 $Comp
-L Device:R_Small_US R20
+L Device:R_Small_US R18
 U 1 1 61A90319
 P 5900 2175
-F 0 "R20" H 5700 2225 50  0000 L CNN
+F 0 "R18" H 5700 2225 50  0000 L CNN
 F 1 "100R" H 5650 2125 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5900 2175 50  0001 C CNN
 F 3 "~" H 5900 2175 50  0001 C CNN
@@ -279,10 +279,10 @@ Wire Wire Line
 Wire Wire Line
 	5900 1975 5900 2075
 $Comp
-L Device:R_Small_US R21
+L Device:R_Small_US R19
 U 1 1 61A9D27D
 P 7300 2175
-F 0 "R21" V 7100 2125 50  0000 L CNN
+F 0 "R19" V 7100 2125 50  0000 L CNN
 F 1 "1k" V 7200 2125 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 7300 2175 50  0001 C CNN
 F 3 "~" H 7300 2175 50  0001 C CNN
@@ -455,10 +455,10 @@ Wire Wire Line
 Wire Wire Line
 	5050 4925 5050 5025
 $Comp
-L Device:R_Small_US R19
+L Device:R_Small_US R17
 U 1 1 6199F776
 P 5050 4825
-F 0 "R19" H 5118 4871 50  0000 L CNN
+F 0 "R17" H 5118 4871 50  0000 L CNN
 F 1 "1.2k" H 5118 4780 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" H 5050 4825 50  0001 C CNN
 F 3 "~" H 5050 4825 50  0001 C CNN
@@ -542,47 +542,26 @@ Wire Notes Line
 Wire Notes Line
 	7100 3600 7100 5375
 $Comp
-L Connector:Conn_01x02_Female J6
+L Connector:Conn_01x02_Female J5
 U 1 1 619B0A12
 P 8300 4300
-F 0 "J6" H 8328 4276 50  0000 L CNN
+F 0 "J5" H 8328 4276 50  0000 L CNN
 F 1 "Conn_01x02_Female" V 8475 3725 50  0000 L CNN
 F 2 "Board:SolderWire_1x02_P2.00mm" H 8300 4300 50  0001 C CNN
 F 3 "~" H 8300 4300 50  0001 C CNN
 	1    8300 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7850 4600 7850 4725
 Text Label 7425 4725 0    50   ~ 0
 BATT-
-Wire Wire Line
-	7850 4400 7850 4300
-$Comp
-L Device:CP_Small C4
-U 1 1 619B9D05
-P 7850 4500
-F 0 "C4" H 7600 4550 50  0000 L CNN
-F 1 "10uF" H 7600 4450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 7850 4500 50  0001 C CNN
-F 3 "~" H 7850 4500 50  0001 C CNN
-	1    7850 4500
-	1    0    0    -1  
-$EndComp
 Text Label 7425 4300 0    50   ~ 0
 BATT+
-Wire Wire Line
-	7850 4300 8100 4300
 Wire Wire Line
 	8100 4400 8025 4400
 Wire Wire Line
 	8025 4400 8025 4725
 Wire Wire Line
-	7850 4725 8025 4725
+	7425 4725 8025 4725
 Wire Wire Line
-	7425 4300 7850 4300
-Connection ~ 7850 4300
-Wire Wire Line
-	7425 4725 7850 4725
-Connection ~ 7850 4725
+	7425 4300 8100 4300
 $EndSCHEMATC
