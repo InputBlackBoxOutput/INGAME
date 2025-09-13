@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name SSD1306-128x64_OLED)(type Legacy)(uri ${KIPRJMOD}/library/symbols/SSD1306-128x64_OLED.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "SSD1306-128x64_OLED")(type "Legacy")(uri "${KIPRJMOD}/library/symbols/SSD1306-128x64_OLED.lib")(options "")(descr ""))
+  (lib (name "board-rescue")(type "KiCad")(uri "${KIPRJMOD}/board-rescue.kicad_sym")(options "")(descr ""))
 )
