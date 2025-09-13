@@ -1,0 +1,193 @@
+
+(session board.ses
+  (base_design board.dsn)
+  (placement
+    (resolution um 10)
+    (component "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP"
+      (place SW3 1460000 -850000 front 0)
+      (place SW2 1355000 -850000 front 0)
+      (place SW1 1250000 -850000 front 0)
+    )
+    (component Board:SolderWire_1x04_P2.54mm
+      (place J1 1415000 -880000 back 90)
+    )
+    (component MountingHole:MountingHole_2.2mm_M2
+      (place H4 1170000 -880000 front 0)
+      (place H3 1540000 -880000 front 0)
+      (place H2 1540000 -820000 front 0)
+      (place H1 1170000 -820000 front 0)
+    )
+  )
+  (was_is
+  )
+  (routes 
+    (resolution um 10)
+    (parser
+      (host_cad "KiCad's Pcbnew")
+      (host_version "(5.1.12)-1")
+    )
+    (library_out 
+      (padstack "Via[0-1]_800:400_um"
+        (shape
+          (circle F.Cu 8000 0 0)
+        )
+        (shape
+          (circle B.Cu 8000 0 0)
+        )
+        (attach off)
+      )
+    )
+    (network_out 
+      (net GND
+        (wire
+          (path F.Cu 2000
+            1420000 -827500
+            1420000 -837003
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1315000 -827500
+            1315000 -837003
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1315000 -837003
+            1420000 -837003
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1315000 -823624
+            1315000 -827500
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1315000 -823624
+            1315000 -817997
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1491200 -880000
+            1491200 -867497
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1430503 -827500
+            1431253 -826750
+            1441693 -826750
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1491200 -867497
+            1482440 -867497
+            1441693 -826750
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1420000 -827500
+            1430503 -827500
+          )
+        )
+        (via "Via[0-1]_800:400_um" 1441693 -826750
+        )
+        (wire
+          (path F.Cu 2000
+            1210000 -817997
+            1315000 -817997
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1210000 -827500
+            1210000 -817997
+          )
+        )
+      )
+      (net /2_1
+        (wire
+          (path F.Cu 2000
+            1290000 -837003
+            1308556 -837003
+            1315088 -843535
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1415000 -880000
+            1351553 -880000
+            1315088 -843535
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1290000 -827500
+            1290000 -837003
+          )
+        )
+        (via "Via[0-1]_800:400_um" 1315088 -843535
+        )
+      )
+      (net /2_2
+        (wire
+          (path F.Cu 2000
+            1402523 -814870
+            1399396 -817997
+            1395000 -817997
+          )
+        )
+        (wire
+          (path B.Cu 2000
+            1440400 -880000
+            1440400 -852747
+            1402523 -814870
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1395000 -827500
+            1395000 -817997
+          )
+        )
+        (via "Via[0-1]_800:400_um" 1402523 -814870
+        )
+      )
+      (net /2_3
+        (wire
+          (path B.Cu 2000
+            1465800 -880000
+            1465800 -867497
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1500000 -827500
+            1500000 -837003
+          )
+        )
+        (wire
+          (path F.Cu 2000
+            1467868 -862125
+            1492990 -837003
+            1500000 -837003
+          )
+        )
+        (via "Via[0-1]_800:400_um" 1467868 -862125
+        )
+        (wire
+          (path B.Cu 2000
+            1465800 -867497
+            1467868 -865429
+            1467868 -862125
+          )
+        )
+      )
+    )
+  )
+)

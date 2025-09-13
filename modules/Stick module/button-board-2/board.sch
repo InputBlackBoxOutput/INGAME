@@ -1,0 +1,198 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date "2021-12-03"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Switch:SW_Push SW1
+U 1 1 5D7AC3DB
+P 4875 3050
+F 0 "SW1" H 4875 3335 50  0000 C CNN
+F 1 "BTN" H 4875 3244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 4875 3250 50  0001 C CNN
+F 3 "~" H 4875 3250 50  0001 C CNN
+	1    4875 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR01
+U 1 1 5D7C2C1C
+P 4875 3375
+F 0 "#PWR01" H 4875 3125 50  0001 C CNN
+F 1 "GND" H 4880 3202 50  0000 C CNN
+F 2 "" H 4875 3375 50  0001 C CNN
+F 3 "" H 4875 3375 50  0001 C CNN
+	1    4875 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5D9354F5
+P 6850 3175
+F 0 "#PWR04" H 6850 2925 50  0001 C CNN
+F 1 "GND" H 6855 3002 50  0000 C CNN
+F 2 "" H 6850 3175 50  0001 C CNN
+F 3 "" H 6850 3175 50  0001 C CNN
+	1    6850 3175
+	1    0    0    -1  
+$EndComp
+Text Label 4625 2525 0    50   ~ 0
+2_1
+Text Label 6900 2875 0    50   ~ 0
+2_1
+Text Label 6900 2975 0    50   ~ 0
+2_2
+$Comp
+L Mechanical:MountingHole H1
+U 1 1 620F9356
+P 4600 4075
+F 0 "H1" H 4700 4121 50  0000 L CNN
+F 1 "MountingHole" H 4700 4030 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4600 4075 50  0001 C CNN
+F 3 "~" H 4600 4075 50  0001 C CNN
+	1    4600 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H3
+U 1 1 620F97B3
+P 5575 4075
+F 0 "H3" H 5675 4121 50  0000 L CNN
+F 1 "MountingHole" H 5675 4030 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 5575 4075 50  0001 C CNN
+F 3 "~" H 5575 4075 50  0001 C CNN
+	1    5575 4075
+	1    0    0    -1  
+$EndComp
+$Comp
+L Mechanical:MountingHole H2
+U 1 1 620F9E48
+P 4600 4425
+F 0 "H2" H 4700 4471 50  0000 L CNN
+F 1 "MountingHole" H 4700 4380 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 4600 4425 50  0001 C CNN
+F 3 "~" H 4600 4425 50  0001 C CNN
+	1    4600 4425
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 3375 4875 3250
+Wire Wire Line
+	6900 2875 7150 2875
+Wire Wire Line
+	7150 2975 6900 2975
+Wire Wire Line
+	6850 3175 7150 3175
+$Comp
+L Connector_Generic:Conn_01x04 J1
+U 1 1 623F30A8
+P 7350 2975
+F 0 "J1" H 7430 2967 50  0000 L CNN
+F 1 "Conn_01x04" V 7575 2700 50  0000 L CNN
+F 2 "Board:SolderWire_1x04_P2.54mm" H 7350 2975 50  0001 C CNN
+F 3 "~" H 7350 2975 50  0001 C CNN
+	1    7350 2975
+	1    0    0    -1  
+$EndComp
+Text Label 6900 3075 0    50   ~ 0
+2_3
+Wire Wire Line
+	7150 3075 6900 3075
+$Comp
+L Mechanical:MountingHole H4
+U 1 1 620FA214
+P 5575 4400
+F 0 "H4" H 5675 4446 50  0000 L CNN
+F 1 "MountingHole" H 5675 4355 50  0000 L CNN
+F 2 "MountingHole:MountingHole_2.2mm_M2" H 5575 4400 50  0001 C CNN
+F 3 "~" H 5575 4400 50  0001 C CNN
+	1    5575 4400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4875 2525 4875 2850
+Wire Wire Line
+	4875 2525 4625 2525
+$Comp
+L Switch:SW_Push SW2
+U 1 1 63E29DB2
+P 5375 3050
+F 0 "SW2" H 5375 3335 50  0000 C CNN
+F 1 "BTN" H 5375 3244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 5375 3250 50  0001 C CNN
+F 3 "~" H 5375 3250 50  0001 C CNN
+	1    5375 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 63E29DB8
+P 5375 3375
+F 0 "#PWR02" H 5375 3125 50  0001 C CNN
+F 1 "GND" H 5380 3202 50  0000 C CNN
+F 2 "" H 5375 3375 50  0001 C CNN
+F 3 "" H 5375 3375 50  0001 C CNN
+	1    5375 3375
+	1    0    0    -1  
+$EndComp
+Text Label 5125 2525 0    50   ~ 0
+2_2
+Wire Wire Line
+	5375 3375 5375 3250
+Wire Wire Line
+	5375 2525 5375 2850
+Wire Wire Line
+	5375 2525 5125 2525
+$Comp
+L Switch:SW_Push SW3
+U 1 1 63E2A712
+P 5850 3050
+F 0 "SW3" H 5850 3335 50  0000 C CNN
+F 1 "BTN" H 5850 3244 50  0000 C CNN
+F 2 "Button_Switch_SMD:SW_SPST_Omron_B3FS-100xP" H 5850 3250 50  0001 C CNN
+F 3 "~" H 5850 3250 50  0001 C CNN
+	1    5850 3050
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 63E2A718
+P 5850 3375
+F 0 "#PWR03" H 5850 3125 50  0001 C CNN
+F 1 "GND" H 5855 3202 50  0000 C CNN
+F 2 "" H 5850 3375 50  0001 C CNN
+F 3 "" H 5850 3375 50  0001 C CNN
+	1    5850 3375
+	1    0    0    -1  
+$EndComp
+Text Label 5600 2525 0    50   ~ 0
+2_3
+Wire Wire Line
+	5850 3375 5850 3250
+Wire Wire Line
+	5850 2525 5850 2850
+Wire Wire Line
+	5850 2525 5600 2525
+Wire Notes Line
+	4125 2250 7850 2250
+Wire Notes Line
+	4125 3825 7850 3825
+Wire Notes Line
+	4125 4725 6450 4725
+Wire Notes Line
+	4125 2250 4125 4725
+Wire Notes Line
+	6450 4725 6450 2250
+Wire Notes Line
+	7850 2250 7850 3825
+$EndSCHEMATC
